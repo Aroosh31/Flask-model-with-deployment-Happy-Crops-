@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Deployment</title>
+</head>
+<body>
+    <h1 align="center">Crop Recommendation Prototype</h1>
+    <img alt="crop image" align="center" src="https://www.fertiglobal.com/wp-content/uploads/2020/05/IMG-elenco-crops.jpg" height="500" width="700">
+    <p>Enter the required variables</p>
+    <form action="" method="POST">
+        <input type="number" step="any" name="Ni" placeholder="Nitrogen in soil ">
+        <input type="number" step="any" name="Ph" placeholder="Phosphorous in soil">
+        <input type="number" step="any" name="Po" placeholder="Potassium in soil">
+        <input type="number" step="any" name="temp" placeholder="temperature of the area">
+        <input type="number" step="any" name="hu" placeholder="humidity value">
+        <input type="number" step="any" name="ph" placeholder="PH value of soil">
+        <input type="number" step="any" name="rf" placeholder="Rainfall in the area">
+
+        <input type="submit">
+    </form>
+    {% if best %}
+        <p>Best crop for your filed is : </p>{{ best }}
+    {% endif %}
+</body>
+</html>
